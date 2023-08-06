@@ -16,8 +16,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { HamburgerMenuMenuData } from "../../Data";
 import { Fragment } from "react";
 import { OpenCollapse } from "../../Types/Types"
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
+
 export const HamburgerMenu = ({
   ToggleMultilineMenuItems,
   openCollapse,

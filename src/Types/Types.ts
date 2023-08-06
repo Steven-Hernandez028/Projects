@@ -3,7 +3,11 @@
 
 // Asumo que openCollapse tiene una estructura similar a esta:
 export  interface OpenCollapse {
-    [key: string]: boolean;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ToggleMultilineMenuItems : any,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    openCollapse: any
+    //[key: string]: boolean;
   }
   
   // Asumo que HamburgerMenuMenuData es un array de objetos con propiedades objectName, name y menuItems:

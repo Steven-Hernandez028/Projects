@@ -3,8 +3,9 @@ import { HeadingMotion, TextMotion } from "./MotionComponent"
 import { Box, Flex, Wrap, WrapItem, useRadio, useRadioGroup } from "@chakra-ui/react"
 
 
-
-function RadioCard(props: unknown) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+function RadioCard(props: any) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { getInputProps, getRadioProps } = useRadio(props)
 
     const input = getInputProps()
