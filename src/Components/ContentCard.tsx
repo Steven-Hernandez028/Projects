@@ -1,8 +1,8 @@
-import { Flex, Box, Container, Icon, Text, Button } from "@chakra-ui/react";
+import { Flex, Box, Icon, Text, Button } from "@chakra-ui/react";
 import { BiSolidChevronRightCircle } from "react-icons/bi";
-import { Link } from "react-router-dom";
 
-export const ContentCard = ({ image, icon, title, description, link }) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const ContentCard = ({ image, icon, title, description } : any) => {
   return (
     <Flex
       height="350px"

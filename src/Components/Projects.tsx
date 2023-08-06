@@ -1,11 +1,10 @@
 import { paddingX } from "../styles/styles"
 import { HeadingMotion, TextMotion } from "./MotionComponent"
-import { Box, Button, Center, Flex, HStack, Hide, VStack, Wrap, WrapItem, useRadio, useRadioGroup } from "@chakra-ui/react"
-
-import { Link } from '@chakra-ui/react'
+import { Box, Flex, Wrap, WrapItem, useRadio, useRadioGroup } from "@chakra-ui/react"
 
 
-function RadioCard(props) {
+
+function RadioCard(props: unknown) {
     const { getInputProps, getRadioProps } = useRadio(props)
 
     const input = getInputProps()
@@ -41,7 +40,7 @@ const Projects = () => {
 
 
 
-    const { getRootProps, getRadioProps } = useRadioGroup({
+    const { getRadioProps } = useRadioGroup({
         name: 'framework',
         defaultValue: 'react',
         onChange: console.log,

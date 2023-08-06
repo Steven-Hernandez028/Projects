@@ -4,8 +4,6 @@ import {
   Box,
   Text,
   Divider,
-  transition,
-  Button,
   ListItem,
   List,
   ListIcon,
@@ -57,6 +55,7 @@ const Footer = () => {
         <Flex gap="2">
           {FooterIconData.map(({ id, icon }) => (
             <Icon
+            key={id}
               width="32px"
               height="32px"
               padding="5px"
@@ -78,6 +77,7 @@ const Footer = () => {
           padding={{ base: 5, md: 0 }}
         >
           <Text color="font.200" fontFamily="font" display="inline">
+            Page
           </Text>
           <Text color="font.200" fontFamily="font" display="inline">
             |

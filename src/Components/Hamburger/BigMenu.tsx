@@ -29,7 +29,7 @@ export const NavBar = () => {
                         
                         
                         >
-                            {MenuListItems.map(({ Title, url }) => (
+                            {MenuListItems.map(({ Title }) => (
                                 <MenuItem fontFamily="font"  >{Title}</MenuItem>
 
                             ))}

@@ -18,10 +18,10 @@ const Navbar = () => {
   });
 
 
-  const ToggleMultilineMenuItems = (key: String) => {
-
-    setOpenCollapse((prevState) => ({
+  const ToggleMultilineMenuItems = (key:string) => {
+    setOpenCollapse((prevState )  => ({
       ...prevState,
+        //@ts-ignore
       [key]: !prevState[key]
     }));
 
@@ -70,7 +70,7 @@ const Navbar = () => {
 
 
         </Flex>
-
+        {/* @ts-ignore */}
         <HamburgerMenu openCollapse={openCollapse} ToggleMultilineMenuItems={ToggleMultilineMenuItems} />
       </Show>
 

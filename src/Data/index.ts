@@ -6,6 +6,8 @@ import {
   , BiLogoTwitter, BiLogoFacebook, BiLogoGooglePlus, BiLogoLinkedinSquare
 } from "react-icons/bi"
 
+import {MenuItem } from "../Types/Types"
+
 import card2 from "../assets/card2.jpg";
 
 export const ContentData = [
@@ -67,7 +69,7 @@ export const headingIcons = [
 ]
 
 
-export const HamburgerMenuMenuData = [
+export const HamburgerMenuMenuData : MenuItem[]= [
   {
     id: 1,
     objectName: "aboutus",
